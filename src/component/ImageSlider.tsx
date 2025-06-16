@@ -1,5 +1,5 @@
 // ImageSlider.jsx
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useRef } from "react";
 

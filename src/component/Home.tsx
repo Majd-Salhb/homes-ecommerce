@@ -26,7 +26,7 @@ export default function Home() {
         </div>
 
         <div className="col-8">
-          <AnimatedText text="ROFFING" />
+          <AnimatedText />
         </div>
         <div className="col-10 col-lg-6 mx-auto">
           <motion.h3

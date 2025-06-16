@@ -1,12 +1,11 @@
 // import { useState } from "react";
-import { useState } from "react";
+
 import { data } from "./data";
 import Product from "./Product";
-// import React from "react";
+
 import { motion } from "framer-motion";
 
 export default function Skills() {
-  const [products, setProducts] = useState(data);
   return (
     <div className="skills">
       <div className="col-10 mx-auto d-flex mt-4">
@@ -33,8 +32,8 @@ export default function Skills() {
       </div>
 
       <div className="product-list row">
-        {products.map((product) => (
-          <Product key={product.id} product={product} />
+        {data.map((product) => (
+          <Product key={product.id} />
         ))}
       </div>
     </div>

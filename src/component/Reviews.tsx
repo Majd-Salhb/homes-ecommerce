@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { reviews } from "./data";
-import { FaQuoteLeft } from "react-icons/fa";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 export default function Testimonial() {
-  const [people, setPeople] = useState(reviews);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
-const AnimatedText = ({ text }) => {
+const AnimatedText = () => {
+  const text = "ROOFING";
   const container = {
     hidden: { opacity: 1 },
     visible: {

@@ -1,15 +1,12 @@
-// import React, { Component } from "react";
 import { useState } from "react";
 import { data } from "./data";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import styled from "styled-components";
-// import { Link } from "react-router-dom";
-// import { ProductConsumer } from "../context";
 
-export default function product({ product }: productProps) {
+export default function product() {
   const [index, setIndex] = useState(0);
   const { img, title, price } = data[index];
-  const checkNumber = (number) => {
+  const checkNumber = (number: number) => {
     if (number > data.length - 1) {
       return 0;
     }
@@ -57,13 +54,6 @@ export default function product({ product }: productProps) {
     </ProductWrapper>
   );
 }
-type productProps = {
-  product: {
-    title: string;
-    price: number;
-    img: string;
-  };
-};
 
 const ProductWrapper = styled.div`
   .card {
