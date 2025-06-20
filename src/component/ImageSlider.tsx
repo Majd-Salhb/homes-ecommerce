@@ -4,11 +4,11 @@ import { motion, useAnimation } from "framer-motion";
 import { useRef } from "react";
 
 const images = [
-  "src/imgs/GridArt_٢٠٢٤٠٨٢١_١٢٣٣٣١١٣٥.png",
-  "src/imgs/360_F_448677702_KLkVl1wllKXe98PtmdHjqMDyFxARV1Yk.jpg",
-  "src/imgs/GridArt_٢٠٢٤٠٨٢١_١٢٣٣٣١١٣٥.png",
-  "src/imgs/360_F_448677702_KLkVl1wllKXe98PtmdHjqMDyFxARV1Yk.jpg",
-  "src/imgs/360_F_448677702_KLkVl1wllKXe98PtmdHjqMDyFxARV1Yk.jpg",
+  "img/12.jpg",
+  "img/11.jpg",
+  "img/25.jpg",
+  "img/1.jpg",
+  "img/16.jpg",
 ];
 
 const ImageSlider = () => {
@@ -30,17 +30,8 @@ const ImageSlider = () => {
   };
   useEffect(startAnimation);
 
-  const stopAnimation = () => {
-    controls.stop();
-  };
-
   return (
-    <div
-      ref={containerRef}
-      className="overflow-hidden w-full bg-gray-100 py-4"
-      onMouseEnter={stopAnimation}
-      onMouseLeave={startAnimation}
-    >
+    <div ref={containerRef} className="overflow-hidden w-full bg-gray-100 py-4">
       <motion.div
         className="d-flex w-max"
         animate={controls}
@@ -52,7 +43,8 @@ const ImageSlider = () => {
             key={index}
             src={src}
             alt={`Slide ${index}`}
-            className="w-40 h-auto mx-2 object-cover rounded"
+            className="w-60 h-auto mx-2 object-cover rounded"
+            loading="lazy"
           />
         ))}
       </motion.div>

@@ -1,73 +1,64 @@
 export const data = [
   {
     id: 1,
-    title: "Google Pixel - Black",
-    img: "img/product-1.png",
-    price: 10,
-    company: "GOOGLE",
-    info: "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-    inCart: false,
-    count: 0,
-    total: 0,
+    title: "Cottages in Texas",
+    img: "img/2.jpg",
   },
   {
     id: 2,
-    title: "Samsung S7",
-    img: "img/product-2.png",
-    price: 16,
-    company: "SAMSUNG",
-    info: "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-    inCart: false,
-    count: 0,
-    total: 0,
+    title: "Residential House in Texas",
+    img: "img/27.jpg",
   },
   {
     id: 3,
-    title: "HTC 10 - Black",
-    img: "img/product-3.png",
-    price: 8,
-    company: "htc",
-    info: "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-    inCart: false,
-    count: 0,
-    total: 0,
+    title: "Apartment Building in Texas",
+    img: "img/8.jpg",
+  },
+
+  {
+    id: 5,
+    title: "Cottages in Texas",
+    img: "img/3.jpg",
+  },
+
+  {
+    id: 8,
+    title: "Residential House in Texas",
+    img: "img/15.jpg",
   },
 ];
 
 export const reviews = [
   {
     id: 1,
-    title: "University student",
-    quote: "they are a good groub and I enjoied work whit them",
+    title: "Football Player",
+    quote:
+      "Robert did a good job handling all the dtails of getting a new roof.",
     name: "samar Amin",
-    img: "img/samar.jpg",
+    img: "img/20.jpeg",
   },
   {
     id: 2,
-    title: "University student",
-    quote: "there projects are amazing and they were so kind",
+    title: "teacher",
+    quote:
+      "Robert did a good job handling all the dtails of getting a new roof.Solid job",
     name: "Lubna yousef",
-    img: "img/lubna.jpg",
+    img: "img/29.jpeg",
   },
   {
     id: 3,
-    title: "University student",
-    quote: "no one can ignore te greate codes that majd did",
+    title: "Engineer",
+    quote:
+      "Robert did a good job handling all the dtails of getting a new roof.Solid job!",
     name: "nabel adnan",
-    img: "img/nabel.jpg",
+    img: "img/30.jpg",
   },
   {
     id: 4,
     title: "University student",
-    quote: "colors,coordination and ranking everything was beautiful ",
+    quote:
+      "Robert was a good advocate in dealing with the insurance compant and knew the best way to get the best results for a new roof.Solid job!",
     name: "mostafa asad",
-    img: "img/mostafa.jpg",
-  },
-  {
-    id: 5,
-    title: "University student",
-    quote: "they respect timing and do great work at te same time",
-    name: "Lara saood",
-    img: "img/lara.jpg",
+    img: "img/6.jpeg",
   },
 ];

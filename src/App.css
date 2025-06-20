@@ -15,7 +15,7 @@ Variables
   --clr-primary-7: hsl(21, 65%, 59%);
   --clr-primary-8: hsl(21, 80%, 74%);
   --clr-primary-9: hsl(21, 94%, 87%);
-  --clr-primary-10: hsl(21, 100%, 94%);
+  --clr-primary-10: hsl(22, 32%, 83%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -42,11 +42,22 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
 .landing {
-  min-height: 100vh;
-  width: 100%;
-  padding-left: 20px;
+  height: 100vh;
+}
+.landing .company-data span {
+  background-color: #7a00ff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 10px;
 }
 .start-btn {
   border: none;
@@ -62,6 +73,7 @@ Variables
   -webkit-user-select: none;
   touch-action: manipulation;
   transition: all 0.3s;
+  margin-top: 1rem;
 }
 
 .start-btn:before {
@@ -120,12 +132,12 @@ Variables
 }
 
 .title {
-  font-size: 200px;
+  font-size: 50px;
   margin: 30px 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 922px) {
   .title {
-    font-size: 90px;
+    font-size: 70px;
   }
 }
 @media (min-width: 992px) {
@@ -135,7 +147,7 @@ Variables
 }
 
 .imgs {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: end;
@@ -144,18 +156,20 @@ Variables
 
 .img1 {
   width: 50%;
-  background-image: url("./imgs/recipe-2.jpeg");
   height: 50%;
   align-self: flex-end;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.img1 img {
+  width: 100%;
+  height: 100%;
 }
 .img2 {
   width: 50%;
   height: 100%;
-  background-image: url("./imgs/recipe-3.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.img2 img {
+  width: 100%;
+  height: 100%;
 }
 
 /*start about section */
@@ -166,12 +180,10 @@ Variables
 .cards {
   height: 80%;
   overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .card-1 {
-  background-image: url(./imgs/recipe-3.jpeg);
+  background-image: url(img/25.jpg);
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,32 +197,38 @@ Variables
   padding: 10px;
 }
 .card-img {
-  background-image: url(./imgs/recipe-4.jpeg);
-  height: 50%;
+  background-image: url("img/19.jpg");
+  height: 100%;
   margin: 30px 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* start services  */
+.services {
+  height: 100vh;
+}
+/* start skills */
+.skills {
+  height: 100vh;
+}
 /*Start Reviews */
 
 .section-center {
   margin-top: 4rem;
   width: 100%;
-  height: 450px;
+  height: 100vh;
 
   position: relative;
   display: flex;
   overflow: hidden;
 }
-.img-box {
-  margin: 0 auto;
-}
+
 .person-img {
-  width: 80%;
+  width: 300px;
   height: 300px;
-  border-radius: 10%;
-  margin: 2rem 2rem;
+  border-radius: 50%;
+
   object-fit: cover;
   border: 4px solid rgb(206, 206, 206);
   box-shadow: 0.2rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -225,9 +243,12 @@ article h4 {
 article h3 {
   color: rgba(134, 26, 236, 0.726);
 }
-
+article .person-data {
+  padding: 30px 0 0 0;
+  text-align: center;
+}
 .quote {
-  font-size: large;
+  font-size: 20px;
   font-weight: bold;
   color: #0f3164;
 }

@@ -22,7 +22,7 @@ export default function Testimonial() {
   }, [index]);
 
   return (
-    <section className="container ">
+    <section id="Reviews" className="container  ">
       <div className="section-center ">
         {reviews.map((review, reviewIndex) => {
           const { id, img, name, quote, title } = review;
@@ -40,10 +40,17 @@ export default function Testimonial() {
           return (
             <article className={position} key={id}>
               <div className="row">
-                <div className="col-10 col-md-6  ">
-                  <img src={img} alt={name} className=" person-img" />
+                <div className="col-10  mx-auto">
+                  <div className="person-img mx-auto">
+                    <img
+                      src={img}
+                      alt={name}
+                      className=" person-img"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
-                <div className="col-10 col-md-6  ">
+                <div className="col-10 mx-auto person-data ">
                   <h4>{name}</h4>
                   <h3>{title}</h3>
                   <p className="quote">{quote}</p>

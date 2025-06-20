@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export default function product() {
   const [index, setIndex] = useState(0);
-  const { img, title, price } = data[index];
+  const { img, title } = data[index];
   const checkNumber = (number: number) => {
     if (number > data.length - 1) {
       return 0;
@@ -29,10 +29,10 @@ export default function product() {
   };
 
   return (
-    <ProductWrapper className=" col-10 mx-auto col-md-6 col-lg-3 my-3">
+    <ProductWrapper className=" col-10 col-sm-6 mx-auto ">
       <div className="card">
-        <div className="img-container p-5">
-          <img src={img} alt="" className="card-img-top" />
+        <div className="img-container ">
+          <img src={img} alt="" className="card-img-top" loading="lazy" />
           <div className="cart-btn">
             <button onClick={prevCard}>
               <FaChevronLeft />
@@ -44,11 +44,8 @@ export default function product() {
         </div>
 
         <div className="card-footer d-flex justify-content-between">
-          <p className="align-self-center mb-0">{title}</p>
-          <h5 className="text-blue font-italic mb-0">
-            <span className="mr-1">$</span>
-            {price}
-          </h5>
+          <p className="align-self-center font-bold mb-0">{title}</p>
+          <button className="btn btn-warning">Get A Quote</button>
         </div>
       </div>
     </ProductWrapper>
@@ -57,7 +54,7 @@ export default function product() {
 
 const ProductWrapper = styled.div`
   .card {
-    border-color: transparent;
+    border-color: hsl(22, 32%, 83%);
     transition: all 1s linear;
   }
   .card-footer {

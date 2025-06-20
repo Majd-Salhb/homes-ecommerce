@@ -8,10 +8,12 @@ import Footer from "./component/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import Skills from "./component/Skills";
+import Navbar from "./component/Navbar";
 
 function App() {
   return (
     <>
+      <Navbar />
       <Home />
       <AboutUs />
       <Services />
